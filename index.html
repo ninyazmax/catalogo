@@ -860,7 +860,7 @@
         db.collection('productos').orderBy('fecha', 'desc').onSnapshot((snapshot) => {
             allProducts = snapshot.docs; // Guardar todos los productos
             filterProducts();
-            productCount.textContent = `(${allProducts.length} platos)`;
+            productCount.textContent = `(${allProducts.length} )`;
         });
 
         // Función para filtrar los productos según el término de búsqueda
@@ -1092,3 +1092,4 @@
     </script>
 </body>
 </html>
+
