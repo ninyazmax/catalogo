@@ -859,9 +859,7 @@
         // Escuchar cambios en la base de datos y actualizar el catálogo
         db.collection('productos').orderBy('fecha', 'desc').onSnapshot((snapshot) => {
             allProducts = snapshot.docs; // Guardar todos los productos
-            filterProducts();
-            productCount.textContent = `(${allProducts.length} )`;
-        });
+});
 
         // Función para filtrar los productos según el término de búsqueda
         function filterProducts() {
@@ -1092,4 +1090,5 @@
     </script>
 </body>
 </html>
+
 
